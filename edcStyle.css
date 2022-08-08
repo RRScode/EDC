@@ -1,8 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 html, body {
     min-height: 100%;
-    background: #777777;
+    padding:0;
+    margin: 0;
+    color: white;
+    background-color: rgb(87, 85, 75);
+    
 }
+
+nav {
+    background-color:#5c804e;
+    font-family:'bebas neue';
+}
+
