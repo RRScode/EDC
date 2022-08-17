@@ -4,17 +4,32 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-grey: rgb(87, 85, 75);
+    --main-green:#5c804e;
+  }
+
 html, body {
     min-height: 100%;
     padding:0;
     margin: 0;
     color: white;
-    background-color: rgb(87, 85, 75);
+    background-color:var(--main-grey);
     
 }
 
-nav {
-    background-color:#5c804e;
+#mainNav {
+    font-size:larger;
+    background-color:var(--main-green);
     font-family:'bebas neue';
+    padding:5px 20px 5px 20px;
+}
+
+#mainNav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:30px;
 }
 
