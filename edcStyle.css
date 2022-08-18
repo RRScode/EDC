@@ -33,3 +33,10 @@ html, body {
     gap:30px;
 }
 
+#mainNav li a:link{
+   color: white;
+}
+
+#mainNav li a:visited{
+    color: white;
+ }
