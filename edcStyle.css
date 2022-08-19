@@ -19,6 +19,8 @@ body {
 }
 
 #mainNav {
+    position:fixed;
+    width:100%;
     font-size:larger;
     background-color:var(--main-green);
     font-family:'bebas neue';
@@ -41,19 +43,20 @@ body {
             color: white;
         }
 
- #parallax img{
-    position: fixed;
-    width:100%;
-    z-index: -1;    
- }
+
+
+
 
  .banner{
-    padding-top:50px;
+    padding-top:250px;
+    padding-bottom:200px;
     display:flex;
     flex-direction: column;
     align-items: center;
     font-family: "bebas neue";
-    }
+    background-color:var(--main-grey)
+       
+}
 
 .banner h2{
     font-family: "raleway";
@@ -63,3 +66,28 @@ body {
     max-width: 300px;
 }
 
+#about{
+    background-color:var(--main-grey);
+    
+}
+
+#how{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-wrap: wrap;
+    align-content:space-between;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.howItem{
+    padding: 50px;
+    border-color: white;
+    border:5px solid;
+    width:250px;
+    font-family: "raleway";
+
+    
+}
