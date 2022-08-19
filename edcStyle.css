@@ -40,3 +40,14 @@ html, body {
 #mainNav li a:visited{
     color: white;
  }
+
+ #parallax{
+    background-image: url(https://i.ytimg.com/vi/Nh1UMT4JK9I/maxresdefault.jpg);
+    min-height:500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    
+ }
+
