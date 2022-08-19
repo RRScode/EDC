@@ -9,12 +9,12 @@
     --main-green:#5c804e;
   }
 
-html, body {
+body {
     min-height: 100%;
     padding:0;
     margin: 0;
     color: white;
-    background-color:var(--main-grey);
+    
     
 }
 
@@ -25,29 +25,41 @@ html, body {
     padding:5px 20px 5px 20px;
 }
 
-#mainNav ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    gap:30px;
-}
+    #mainNav ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap:30px;
+    }
 
-#mainNav li a:link{
-   color: white;
-}
+        #mainNav li a:link{
+        color: white;
+        }
 
-#mainNav li a:visited{
-    color: white;
+        #mainNav li a:visited{
+            color: white;
+        }
+
+ #parallax img{
+    position: fixed;
+    width:100%;
+    z-index: -1;    
  }
 
- #parallax{
-    background-image: url(https://i.ytimg.com/vi/Nh1UMT4JK9I/maxresdefault.jpg);
-    min-height:500px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    
- }
+ .banner{
+    padding-top:50px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "bebas neue";
+    }
+
+.banner h2{
+    font-family: "raleway";
+}
+
+    #bannerImg{
+    max-width: 300px;
+}
 
