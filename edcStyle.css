@@ -22,49 +22,34 @@ body {
     
 }
 
-nav {
+.navbar{
+    background-color: var(--main-green);
+    color:white;
+    font-family: 'bebas neue';
+    font-size:25px;
     position:fixed;
     width:100%;
-    background-color:var(--main-green);
-    font-family:'bebas neue';
-    padding:0;
-    margin:0;  
-
 }
 
-    nav ul{
-        font-size:25px;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap:nowrap;
-        justify-content: flex-end;    
-        gap: 30px;
-        background-color:blue;
-    
+.nav-link{
+    color:white;
+}
 
-        }
+.nav-link:hover{
+    color:white;
+}
 
-    nav ul li{
-     background-color:orange;
-    }
 
-        nav li a:link{
-        color: white;
-        }
 
-        nav li a:visited{
-            color: white;
-        }
 
 
     .banner{
-        
+        padding:150px;
         display:flex;
         flex-direction: column;
         align-items: center;
         font-family: "bebas neue";       
-        background-color: rgba(0, 0, 0, .4);
+        background-color: rgba(0, 0, 0, .5);
     }
 
     .banner h2{
@@ -73,6 +58,7 @@ nav {
 
     #bannerImg{
         max-width: 300px;
+        margin:50px;
     }
 
 #about{
