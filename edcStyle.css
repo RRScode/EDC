@@ -14,80 +14,87 @@ body {
     padding:0;
     margin: 0;
     color: white;
+    background-image: url(media/parallax_1_image.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
     
     
 }
 
-#mainNav {
+nav {
     position:fixed;
     width:100%;
-    font-size:larger;
     background-color:var(--main-green);
     font-family:'bebas neue';
-    padding:5px 20px 5px 20px;
+    padding:0;
+    margin:0;  
+
 }
 
-    #mainNav ul{
+    nav ul{
+        font-size:25px;
         list-style: none;
         display: flex;
         flex-direction: row;
-        justify-content: flex-end;
-        gap:30px;
+        flex-wrap:nowrap;
+        justify-content: flex-end;    
+        gap: 30px;
+        background-color:blue;
+    
+
+        }
+
+    nav ul li{
+     background-color:orange;
     }
 
-        #mainNav li a:link{
+        nav li a:link{
         color: white;
         }
 
-        #mainNav li a:visited{
+        nav li a:visited{
             color: white;
         }
 
 
+    .banner{
+        
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "bebas neue";       
+        background-color: rgba(0, 0, 0, .4);
+    }
 
-
-
- .banner{
-    padding-top:250px;
-    padding-bottom:200px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "bebas neue";
-    background-color:var(--main-grey)
-       
-}
-
-.banner h2{
-    font-family: "raleway";
-}
+    .banner h2{
+        font-family: "raleway";
+    }
 
     #bannerImg{
-    max-width: 300px;
-}
+        max-width: 300px;
+    }
 
 #about{
     background-color:var(--main-grey);
     
 }
 
-#how{
-    width:75%;
-    margin-left:auto;
-    margin-right:auto;
-    display:flex;
-    flex-wrap: wrap;
-    align-content:space-between;
-    justify-content: space-evenly;
-    text-align: center;
-}
+    #how{
+        width:75%;
+        margin-left:auto;
+        margin-right:auto;
+        display:flex;
+        flex-wrap: wrap;
+        align-content:space-between;
+        justify-content: space-evenly;
+        text-align: center;
+    }
 
-.howItem{
-    padding: 50px;
-    border-color: white;
-    border:5px solid;
-    width:250px;
-    font-family: "raleway";
-
-    
-}
+    .howItem{
+        padding: 50px;
+        border-color: white;
+        border:5px solid;
+        width:250px;
+        font-family: "raleway";
+    }   
