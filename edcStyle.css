@@ -44,7 +44,7 @@ body {
 
 
     .banner{
-        padding:150px;
+        padding: 200px 0px;
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -64,15 +64,23 @@ body {
 
 #about{
     background-color:var(--main-grey);
+    padding-top:50px;
+    padding-bottom:150px;
+    margin-left: auto;
+    margin-right:auto;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
     
 }
     #about h2{
-        text-align: center;
-        padding:40px;
+        
+        padding:50px;
     }
 
     #how{
-        width:80%;
+        width:100%;
         margin-left:auto;
         margin-right:auto;
         display:flex;
@@ -90,18 +98,30 @@ body {
         width:350px;
         font-family: "raleway";
     }  
-    
+
+    .howVideo{
+        margin-top:100px;
+        
+    }
+
+
+
+
     @media only screen and (max-width:1440px) {
         #how {
-            width:80%;
-        margin-left:auto;
-        margin-right:auto;
         display:flex;
-        align-content:center;
-        justify-content: space-around;
+        flex-direction:row;
+        flex-wrap:wrap;
+        gap:50px;
+        align-content:space-around;
+        justify-content: center;
         text-align: center;
-        flex-direction: column;
         
+        
+        }
+
+        #howItem{
+background-color: blue;
         }
 
     }
