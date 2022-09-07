@@ -5,8 +5,8 @@
 }
 
 :root{
-    --main-grey: rgb(87, 85, 75);
-    --main-green:#5c804e;
+    --main-grey: rgb(110, 110, 110);
+    --main-green:#6e8f60;
   }
 
 body {
@@ -29,13 +29,19 @@ body {
     font-size:25px;
     position:fixed;
     width:100%;
+    display:flex;
 }
+
 
 .nav-link{
     color:white;
 }
 
 .nav-link:hover{
+    color:white;
+}
+
+.nav-link:visited{
     color:white;
 }
 
@@ -105,6 +111,33 @@ body {
     }
 
 
+    .join{
+        padding: 50px;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        background-color: white;
+        color:black;
+    }
+
+    .btn{
+        background-color: var(--main-green);
+        border-color: var(--main-green);
+        border: 2px solid;
+    }
+
+    .btn:hover{
+        background-color: var(--main-green);
+        border:2px solid;
+        border-color:var(--main-grey);
+    }
+
+    .btn-primary:visited{
+        background-color: var(--main-green);
+        border:2px solid;
+        border-color:var(--main-grey);
+    }
+
 
 
     @media only screen and (max-width:1440px) {
@@ -121,7 +154,7 @@ body {
         }
 
         #howItem{
-background-color: blue;
+            background-color: blue;
         }
 
     }

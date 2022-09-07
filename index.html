@@ -10,27 +10,26 @@
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-          
+        <div class="container-fluid justify-content-end">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">How it Works</a>
+                <a class="nav-link" href="#">How it works</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Pricing</a>
+                <a class="nav-link" href="#">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Log In</a>
+                <a class="nav-link" href="#">Log in</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Sign Up</a>
+                <a class="nav-link">Sign up</a>
               </li>
             </ul>
           </div>
@@ -39,13 +38,16 @@
 
     </header>
     <main>
-      
+    
+
+
         <div class="banner">
           <img id="bannerImg" src="media/bannerLogo.png" alt="EDC logo"/>
           <h1>Every-day-carry items, curated monthly, for the person on the go</h1>
           <h2>Try out the latest tech, gadgets, and accessories for any scenario</h2>
         </div><!--banner-->
 
+        
     
 
       <div id="about">
@@ -69,11 +71,86 @@
           <iframe alt="embeded video" id="video" width="560" height="315" src="https://www.youtube.com/embed/ScMzIvxBSi4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div><!--about-->
+
+      <div class="join">
+        <h3>Free to join</h3>
+    
+        <div class="modal fade" id="getStarted" aria-hidden="true" aria-labelledby="getStartedLabel" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <!--id="exampleModalToggleLabel"-->
+                <h5 class="modal-title" >Tell Us About Yourself</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>What kind of products are you interested in?</p>
+                <p>Fill out thte quiz and we'll be able to better choose boxes you'll love.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#getStarted2" data-bs-toggle="modal">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="getStarted2" aria-hidden="true" aria-labelledby="getStartedLabel2" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="getStartedLabel2">Support Small With Big Buys</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Your membership allows us to place large orders with small makers. Their business grows, and we match you to products that fit your interests.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#getStarted3" data-bs-toggle="modal">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="getStarted3" aria-hidden="true" aria-labelledby="getStartedLabel3" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="getStartedLabel3">Preview Your Monthly Box</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Each month, we'll send you an email describing exactly what's in your box. Don't want it? You can always skip the month or swap into another box. Only pay for what ships.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#getStarted4" data-bs-toggle="modal">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="getStarted4" aria-hidden="true" aria-labelledby="getStartedLabel4" tabindex="-1">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="getStartedLabel4">Get The Gear You Want At A Great Value</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p>Enjoy. Each month, we'll introduce new options and improve our selections for you based on your feedback</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#getStarted" data-bs-toggle="modal">Next</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+        <a class="btn btn-primary" data-bs-toggle="modal" href="#getStarted" role="button">GET STARTED</a>
+      </div>
+
     </main>
   
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
   </body>
 </html>
